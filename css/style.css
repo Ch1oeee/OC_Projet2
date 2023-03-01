@@ -4,10 +4,14 @@
 }
 
 header{
+    max-width: 1400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
+    padding-left: 55px;
+    padding-top: 44px;
+    padding-bottom: 53px;
 }
 
 .logo {
@@ -17,7 +21,7 @@ header{
 
 nav a{
     font-size: 16px;
-    padding: 57px 30px 30px 30px;
+    padding: 51px 30px 30px 30px;
     text-decoration: none;
 }
 
@@ -27,7 +31,8 @@ nav a:hover{
 }
 
 main {
-    padding: 0px 50px 0px 50px;
+    margin: 0px 50px 0px 50px;
+    max-width: 1400px;
 }
 
 /* CSS for SECTION 1 */
@@ -46,6 +51,9 @@ h2 {
 p{
     font-size: 16px;
     font-weight: 400;
+}
+
+.header1 {
     margin-top: 0;
 }
 
@@ -54,6 +62,7 @@ p{
 .searchForm {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .searchIconLocation {
@@ -85,4 +94,53 @@ input::placeholder{
     font-size: 18px;
     font-weight: 700;
 }
+ /* CSS FOR THE FILTERS PART */
 
+ .filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7px;
+    padding-top: 15px;
+    
+ }
+
+ .buttonSection1 {
+    background-color: white;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    margin: 20px;
+    height: 50px;
+    padding: 4px 20px;
+ }
+
+ .buttonSection1 :hover {
+    background-color: #DEEBFF;
+ }
+
+ .insideFilters {
+    font-size: 17px;
+    font-weight: 700;
+ }
+
+ .insideFilters i {
+    color: #0065FC;
+    padding-right: 10px;
+ }
+ 
+/* Info supplémentaire section 1 */
+
+.info2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info2 i{
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    color: #0065FC;
+    padding: 12px 10px 12px 10px;
+    margin-right: 11px;
+}
