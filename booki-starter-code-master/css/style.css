@@ -21,7 +21,6 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
 }
 
@@ -37,6 +36,11 @@ body {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+
+.card a {
+    text-decoration: none;
+}
+
 .card img {
     object-fit: cover;
 }
@@ -44,6 +48,13 @@ body {
 .card-title {
     font-size: 16px;
     color: black;
+    margin: 0;
+}
+
+.card-subtitle{
+    color: black;
+    margin: 0;
+    font-size: 14px;
 }
 
 .euro {
@@ -70,6 +81,47 @@ body {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.image-hebergement {
+    box-sizing: border-box;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 124px;
+}
+
+.hebergements-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergements-card .card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 199px;
+    margin-top: 30px;
+}
+
+.hebergements-card .card-content{
+    padding: 5px 10px 10px 10px;
+}
+
+.hebergements-card .card-title{
+    padding-bottom: 8px;
+
+}
+
+.hebergements-card .card-subtitle {
+    padding-bottom: 8px;
+}
+
+.more {
+    margin: 0;
+    margin-top: 30px;
 }
 
 /****** Populaires ***********/
@@ -148,29 +200,6 @@ main {
     margin: 0px 50px 0px 50px;
 }
 
-/* CSS for SECTION 1 */
-
-h1{
-    font-size: 22px;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 16px;
-    font-weight: 700;
-    margin:0px;
-}
-
-p{
-    font-size: 16px;
-    font-weight: 400;
-}
-
 /*  CSS FORMULAIRE DE RECHERCHE  */
 
 .searchForm {
@@ -238,7 +267,6 @@ input::placeholder{
  }
 
  .insideFilters i {
-    color: #0065FC;
     padding-right: 10px;
  }
 
@@ -258,87 +286,6 @@ input::placeholder{
     padding: 12px 10px 12px 10px;
     margin-right: 11px;
 }
-
-/* SECTION 2 */
-
-.hebergements {
-    background-color: #F2F2F2;
-    height: 626px;
-    width: 880px;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: white;
-    width: 28%;
-    height: 199px;
-    border-radius: 20px;
-    margin: 15px;
-
-}
-
-.card a {
-    text-decoration: none;
-}
-
-
-.imageHebergement {
-    box-sizing: border-box;
-    object-fit:cover;
-    width: 100%;
-    height: 124px;
-    border: 5px solid #FFFFFF;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.cardInfos {
-    box-sizing: border-box;
-    padding-left: 16px;
-}
-
-.nightPrices {
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-.rating i {
-    color: #0065FC;
-}
-
-.greyStar i {
-    color: #D9D9D9;
-}
-
-.cardContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;  
-}
-
-.hebergements h1 {
-    padding-left: 40px;
-    padding-top: 42px;
-    margin: 0;
-    padding-bottom: 10px;
-}
-
-.hebergements h2 {
-    padding-left: 40px;
-    margin: 0;
-    padding-top: 30px;
-}
-
-
-
-
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
