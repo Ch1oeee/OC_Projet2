@@ -169,6 +169,69 @@ body {
     margin-bottom: 5px;
 }
 
+/* Activités à Marseille */
+
+.activites {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+}
+
+.activites .section-title{
+    padding-left: 30px;
+}
+
+.activites-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.activites .card  {
+    height: 440px;
+    width: 40%;
+    margin: 30px 15px 30px 15px;
+    padding: 0px;
+}
+
+.activites-card img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    height: 380px;
+}
+
+.activites-card .card-title{
+    padding: 20px 19px 20px 19px;
+}
+
+
+/* FOOTER */
+
+footer{
+    margin: 0px 50px 0px 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    
+}
+
+.footer-txt {
+    padding: 20px;
+}
+
+.footer-txt p{
+    margin: 0;
+    padding-top: 20px;
+}
+
+.footer-title{
+    margin: 0;
+}
+
+
+
 /* mine---------------------------------------------------------------- */
 
 /* SECTION 1 */
@@ -189,6 +252,7 @@ nav a{
     font-size: 16px;
     padding: 57px 30px 30px 30px;
     text-decoration: none;
+    color: black;
 }
 
 nav a:hover{
@@ -211,6 +275,10 @@ main {
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
     padding: 15px 20px 15px 20px;
+}
+
+.searchIconLocation i{
+    color: black;
 }
 
 input[type=text] {
@@ -257,7 +325,7 @@ input::placeholder{
     padding: 4px 20px;
  }
 
- .buttonSection1 :hover {
+ .buttonSection1:hover{
     background-color: #DEEBFF;
  }
 
