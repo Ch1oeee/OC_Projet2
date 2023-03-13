@@ -267,6 +267,7 @@ article:hover{
 
 .hebergements-card .card-content{
     padding: 0px 15px 15px 15px;
+    box-sizing: border-box;
 }
 
 .hebergements-card .card-title{
