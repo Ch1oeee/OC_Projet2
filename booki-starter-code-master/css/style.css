@@ -101,6 +101,8 @@ input[type=text] {
 
 input::placeholder{
     color: black;
+    text-align: center;
+    opacity: 1;
 }
 
 .searchFormSubmit {
@@ -204,7 +206,6 @@ article:hover{
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -239,6 +240,8 @@ article:hover{
 
 .image-hebergement {
     object-fit: cover;
+    box-sizing: border-box;
+    border: 5px solid white;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 124px;
@@ -253,21 +256,22 @@ article:hover{
 .hebergements-card .card {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 199px;
+    width: 31%;
+    height: 207px;
     margin-top: 30px;
 }
 
 .hebergements-card .card-content{
-    padding: 5px 10px 10px 10px;
+    padding: 0px 15px 15px 15px;
+    box-sizing: border-box;
 }
 
 .hebergements-card .card-title{
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 }
 
 .hebergements-card .card-subtitle {
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 }
 
 .more {
@@ -296,6 +300,8 @@ article:hover{
     height: 134px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    border: 5px solid white;
+    border-right: 0px;
 }
 
 .populaires-cards .card-content {
@@ -308,7 +314,7 @@ article:hover{
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 4px;
 }
 
@@ -317,7 +323,7 @@ article:hover{
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* Activités à Marseille */
