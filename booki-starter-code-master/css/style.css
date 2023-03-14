@@ -36,7 +36,7 @@ a {
     color: black;
 }
 
-/* SECTION 1 */
+/****** SECTION 1 ******/
 
 header{
     max-width: 1440px;
@@ -75,20 +75,23 @@ main {
     margin: 0;
 }
 
-/*  CSS FORMULAIRE DE RECHERCHE  */
+/*******  CSS FORMULAIRE DE RECHERCHE  *******/
 
-.searchForm {
+.search-form {
     display: flex;
     flex-direction: row;
 }
 
-.searchIconLocation {
+.search-icon-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
-    padding: 15px 20px 15px 20px;
+    width: 50px;
 }
 
-.searchIconLocation i{
+.search-icon-location i{
     color: black;
 }
 
@@ -96,7 +99,6 @@ input[type=text] {
     border: 1px solid #F2F2F2;
     font-size: 18px;
     font-weight: 700;
-    padding: 14px 20px 14px 20px;
 }
 
 input::placeholder{
@@ -105,25 +107,31 @@ input::placeholder{
     opacity: 1;
 }
 
-.searchFormSubmit {
+input:focus::placeholder{
+    color: transparent;
+}
+
+.search-form-submit {
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
     border: none;
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.searchFormSubmitText{
+.search-form-submit-text{
     color: white;
     font-size: 18px;
     font-weight: 700;
 }
 
-.searchFormSubmitText i{
+.search-form-submit i{
     display: none;
-    color: white;
 }
 
-/* FILTERS */
+/******** FILTERS **********/
 
 .filters {
     display: flex;
@@ -154,25 +162,25 @@ input::placeholder{
     background-color: #DEEBFF;
 }
 
-.insideFilters {
+.inside-filters {
     font-size: 17px;
     font-weight: 700;
 }
 
-.insideFilters i {
+.inside-filters i {
     padding-right: 10px;
 }
 
-/* Info supplémentaire section 1 */
+/***** Info supplémentaire section 1 *****/
 
-.info2{
+.info-txt{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 20px 0px 20px 0px;
 }
 
-.info2 i{
+.info-txt i{
     border: 1px solid #D9D9D9;
     border-radius: 50%;
     color: #0065FC;
@@ -326,7 +334,7 @@ article:hover{
     margin-bottom: 10px;
 }
 
-/* Activités à Marseille */
+/****** Activités à Marseille *******/
 
 .activites {
     display: flex;
@@ -365,7 +373,7 @@ article:hover{
 }
 
 
-/* FOOTER */
+/********* FOOTER *********/
 
 footer{
     max-width: 1440px;
@@ -411,7 +419,7 @@ footer{
 
 
 
-/* Medium devices (tablets, less/equal than 1024px) */
+/*** Medium devices (tablets, less/equal than 1024px) ***/
 @media (max-width: 1024px) {
     .filters{
         flex-direction: column;
@@ -471,7 +479,7 @@ footer{
     }
 }
 
-/* Small devices (phones, less than 768px) */
+/****** Small devices (phones, less than 768px) ******/
 @media (max-width: 767.98px) {
     header {
         flex-direction: column;
@@ -507,16 +515,26 @@ footer{
         margin: 0 20px 0 20px;
     }
 
-    .searchFormSubmit{
-        border-radius: 15px;
+    .search-form{
+        height: 50px;
+        justify-content: center;
     }
 
-    .searchFormSubmitText{
+    .search-form input {
+        width: 70%;
+    }
+
+    .search-form-submit{
+        width: 50px;
+    }
+
+    .search-form-submit-text{
         display: none;
     }
 
-    .searchFormSubmit i {
+    .search-form-submit i {
         color: white;
+        display: inline;
     }
     
     .filter-grid {
@@ -529,7 +547,7 @@ footer{
         width: 47%;
     }
 
-    .buttonSection1 .insideFilters {
+    .buttonSection1 .inside-filters {
         font-size: 14px;
     }
 
